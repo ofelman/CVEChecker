@@ -29,7 +29,7 @@
     Parameters
         -Platform < SysID >
         -OS < win10|win11>
-        -OSVer < 1909|2004|2009|21H1|21H2|22H2 >
+        -OSVer < 21H2|22H2|23H2|24H2 >      # Updated list 10/2024
         -ListPrevious   -- also check and show previous Softpaqs w/vulnerabilities       
         -DebugOutput    -- [switch] add additional info to output 
         -NoDots         -- [switch] avoid output of '.' while looping (useful when redirecting output)
@@ -59,7 +59,7 @@ param(
     [string]$Platform,
     [Parameter(Position = 1)] [ValidateSet('win10', 'win11')]
     [string]$OS,
-    [Parameter(Position = 2)] [ValidateSet('1909','2004','20H1','2009','20H2','21H1','21H2','22H2')]
+    [Parameter(Position = 2)] [ValidateSet('20H2','21H1','21H2','22H2','23H2','24H2')] # Updated list 10/2024
     [string]$OSVer,
     [Parameter(Mandatory = $false)]
     [switch]$ListPrevious,
